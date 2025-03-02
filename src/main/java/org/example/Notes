@@ -1,0 +1,53 @@
+SOLID PRINCIPLES : These are the guidelines that enhance software design making code more maintainable and scalable
+
+1. S [ Single Responsibility Principle ] : A class should have single reason to get changed , it means a single class can implement only single
+functionality
+
+Imagine a baker who is responsible for baking bread.
+The baker’s role is to focus on the task of baking bread, ensuring that the bread is of high quality, properly baked, and meets the bakery’s standards.
+However, if the baker is also responsible for managing the inventory, ordering supplies, serving customers, and cleaning the bakery, this would violate the SRP.
+
+
+
+2. O [ Open Closed Principle ] : Software Entities like (classes, functions , modules etc.) should be open for extension but closed for modification.
+which means you should be able to extend a class behavior, without modifying it.
+
+Imagine you have a class called PaymentProcessor that processes payments for an online store.
+Initially, the PaymentProcessor class only supports processing payments using credit cards.
+However, you want to extend its functionality to also support processing payments using PayPal.
+
+Instead of modifying the existing PaymentProcessor class to add PayPal support,
+you can create a new class called PayPalPaymentProcessor that extends the PaymentProcessor class.
+This way, the PaymentProcessor class remains closed for modification but open for extension, adhering to the Open-Closed Principle.
+
+
+
+3. L [ Liskov Substitution Principle ] : Derived or child classes must be substitutable for their base or parent classes.
+This principle ensures that any class that is the child of a parent class should be usable in place of its parent without any unexpected behavior.
+
+Understand like this , In all context where we need Parent -> we can only use parent
+                       In all context where we need Child -> we can use parent as well as child
+                       and vice versa of above condition is violation of Lsk principle
+One of the classic examples of this principle is a rectangle having four sides.
+A rectangle’s height can be any value and width can be any value.
+A square is a rectangle with equal width and height. So we can say that we can extend the properties of the rectangle class into square class.
+
+
+
+ 4. I [ Interface Segregation Principle ] : This principle is the first principle that applies to Interfaces instead of classes in SOLID and it is similar to the single responsibility principle.
+ It states that “do not force any client to implement an interface which is irrelevant to them“.
+ Here your main goal is to focus on avoiding fat interface and give preference to many small client-specific interfaces.
+ You should prefer many client interfaces rather than one general interface and each interface should have a specific responsibility.
+
+Suppose if you enter a restaurant and you are pure vegetarian.
+The waiter in that restaurant gave you the menu card which includes vegetarian items, non-vegetarian items, drinks, and sweets.
+
+
+
+5. D [ Dependency Inversion Principle ] : High-level modules should not depend on low-level modules.
+Both should depend on abstractions“. Additionally, abstractions should not depend on details. Details should depend on abstractions.
+In simpler terms, the DIP suggests that classes should rely on abstractions (e.g., interfaces or abstract classes) rather than concrete implementations.
+
+In a software development team, developers depend on an abstract version control system (e.g., Git) to manage and track changes to the codebase.
+They don’t depend on specific details of how Git works internally.
+so we can have IVersionControl  (interface) --> GitVersionControl (is a IVersionControl) --> DeveloperTeam (has a IVersionControl)
