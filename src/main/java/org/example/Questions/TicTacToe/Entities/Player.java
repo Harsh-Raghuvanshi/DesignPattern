@@ -1,4 +1,4 @@
-package org.example.TicTacToe.Entities;
+package org.example.Questions.TicTacToe.Entities;
 
 public class Player {
     String name;

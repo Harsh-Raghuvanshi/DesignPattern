@@ -1,4 +1,4 @@
-package org.example.TicTacToe.Entities;
+package org.example.Questions.TicTacToe.Entities;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package org.example.TicTacToe;
+package org.example.Questions.TicTacToe;
 
-import org.example.TicTacToe.Entities.Game;
+import org.example.Questions.TicTacToe.Entities.Game;
 
 public class Main {
     public static void main(String [] args){
